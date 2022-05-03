@@ -1,0 +1,23 @@
+img{
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius: 100%;
+    transition: transform .4s;
+}
+
+nav{
+    border: 5px solid lightskyblue
+}
+b{
+    color: aliceblue;
+    font-size: 3.5vw;
+}
+
+b:hover{
+    color: rgb(4, 255, 255);
+}
+
+img:hover{
+    transform: rotate(360deg);
+    
+}

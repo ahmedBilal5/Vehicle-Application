@@ -1,0 +1,55 @@
+<div id="filters">
+   <div class="filt">
+       <h4>City Filter</h4>
+        <div id="city_filter" *ngFor="let city of cities">
+            <input type="checkbox" name="city list" value="{{city}}" (change)="cityChangeHandler($event,'bla')">{{city}}
+        </div>   
+   </div>
+    
+   <div class="filt">
+        <h4>Make Filter</h4>
+        <div id="city_filter" *ngFor="let make of makes">
+            <input type="checkbox" name="makes list" value="{{make}}" (change)="makeChangeHandler($event)">{{make}}
+        </div>
+   </div>
+
+   <!-- <div class="filt">
+       <h4>Rating Filter</h4>
+        <div id="rating_filter" *ngFor="let rating of ratings">
+            <input type="radio" name="rating list" value="{{rating}}" (change)="ratingChangeHandler($event)">{{rating}}
+        </div>
+   </div>
+    <div class="filt">
+        <h4>Year Filter</h4>
+        <div id="year_filter" *ngFor="let year of years">
+            <input type="radio" name="year list" value="{{year}}" (change)="yearChangeHandler($event)">{{year}}
+        </div>   
+    </div> -->
+</div>
+
+
+
+<ul class="grid_wrapper">
+    <li *ngFor="let vehicle of selected_vehicles">
+        <a routerLink="../vehicle/{{vehicle.id}}">
+            <img src="{{vehicle.image}}" alt="">
+            
+            <div class="title">
+                {{vehicle.brand}} {{vehicle.model}} {{vehicle.year}}
+            </div>
+            
+            <div class="reg_city">
+                <b>Registered City:</b> {{vehicle.registered_city}}
+            </div>
+            
+            <div class="price">
+                <b>Price:</b> {{vehicle.price}} RS
+            </div>
+
+            <div class="rating">
+                <b>Rating:</b> {{vehicle.rating}} 
+            </div>
+
+        </a>  
+    </li>
+</ul>

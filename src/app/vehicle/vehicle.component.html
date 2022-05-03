@@ -1,0 +1,45 @@
+<div id="outer">
+    <img id="car_image" [src]="veh.image" alt="nonce">
+    <ul id="car_info">
+        <h1>{{veh.brand}} {{veh.model}} {{veh.year}} Detailed Information</h1>
+        <li>Condition: {{veh.condition}}</li>
+        <li>Fuel Type: {{veh.fuel}}</li>
+        <li>Engine Capacity: {{veh.engine_capacity}}</li>
+        <li>Steering Type: {{veh.steering}}</li>
+        <li>Mileage: {{veh.kms_driven}}</li>
+        <li>City: {{veh.registered_city}}</li>
+        <li>Rating: {{veh.rating}}/5</li>
+    </ul>
+    <div id="price">
+        Car Price: {{veh.price}}
+    </div>
+
+    <div id="inner">
+        <div id="seller_info">
+            <img [src]="veh.seller_image" alt="nonce">
+            {{veh.seller_name}} 
+        </div>
+        
+        <ul id="seller_comments">
+            <b>Seller Comments</b>
+            <li>{{veh.seller_comments[0]}}</li>
+            <li>{{veh.seller_comments[1]}}</li>
+        </ul>        
+    </div>
+
+
+    
+
+</div>
+<!-- "id": 0,
+          "brand": "Toyota",
+          "condition": "Used",
+          "fuel": "Diesel",
+          "engine_capacity": "1900cc",
+          "kms_driven": 100000,
+          "model": "Prado",
+          "price": 2100000,
+          "registered_city": "Karachi",
+          "transaction_type": "Cash",
+          "year": 1997,
+          "rating": 5, -->

@@ -1,0 +1,70 @@
+#seller_info img{
+    width: 10%;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid grey;
+    /* margin-left: 15%; */
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+#seller_info{
+    font-size: larger;
+    justify-content: center;
+}
+#outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(214, 230, 241); */
+}
+
+#car_image{
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+    border: 2px solid grey;
+    opacity: 0.9
+}
+
+#car_image:hover{
+    opacity: 1;
+}
+
+
+#price{
+    margin-top:2%;
+    font-size: x-large;
+    text-decoration: underline;
+    background-color: rgb(104, 160, 244);
+    /* border: 1px solid gray;*/
+} 
+
+#car_info{
+    border: 1px solid grey;
+    padding: 1% 1% 1% 1%;
+    list-style-type: none;
+    background-color: rgb(151, 180, 226);
+    box-shadow: 5px 10px #888888;
+}
+#car_info h1{
+    margin-bottom: 3%;
+}
+#car_info li{
+    margin-top: 1%;
+}
+
+
+#seller_comments{
+    /* margin-right: 19%; */
+    list-style-type: none;
+    
+}
+#seller_comments li{
+    border: 1px solid grey;
+    margin-top: 1.5%;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(211, 228, 241);
+    box-shadow: 2px 5px #888888;
+}
